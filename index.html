@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="Flipkart" class="flipkart-logo">
+                        <div class="explore-plus">
+                            <span>Explore</span>
+                            <span class="plus">Plus<img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png" alt="plus" class="plus-icon"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products, brands and more">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="nav-right" id="navRight">
+                <a href="#" class="login-btn">Login</a>
+                <a href="#" class="nav-link">Become a Seller</a>
+                <div class="dropdown">
+                    <button class="dropbtn">More <i class="fas fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Notification Preferences</a>
+                        <a href="#">24x7 Customer Care</a>
+                        <a href="#">Advertise</a>
+                        <a href="#">Download App</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-link cart"><i class="fas fa-shopping-cart"></i> Cart</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- BBD Banner -->
+    <div class="banner-container">
+        <img src="asset/BBD.jpg" alt="Big Billion Days Sale" class="bbd-banner">
+    </div>
+    
+    <div class="quiz-container" id="quiz-container">
+        <h2>Answer 5 Questions to Win an iPhone 16 Pro!</h2>
+        <div class="quiz-question" id="question">Question will appear here</div>
+        <div class="quiz-options" id="options">
+            <!-- Options will be added by JavaScript -->
+        </div>
+        <div class="quiz-progress" id="progress">Question 1 of 5</div>
+    </div>
+
+    <!-- Scratch Card Section (initially hidden) -->
+    <div class="scratch-card-container" id="scratch-card-section" style="display: none;">
+        <div class="scratch-card">
+            <div class="scratch-here">Scratch Here</div>
+            <div class="scratch-overlay" id="scratch-overlay"></div>
+            <div class="prize-content">
+                <h2>Congratulations! 🎉</h2>
+                <img src="asset/16pro.jpg" alt="iPhone 16 Pro" class="iphone-image">
+                <h3>iPhone 16 Pro 256GB!</h3>
+                <p>Claim your prize</p>
+                <a href="claim.html" class="claim-btn" style="text-decoration: none; display: inline-block;">Claim Your iPhone 16 Pro</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Prize Section -->
+
+
+    <!-- Customer Reviews -->
+    <div class="reviews-section">
+        <h2><i class="fas fa-star"></i> Customer Reviews</h2>
+        <div class="reviews-grid">
+            <!-- Review 1 -->
+            <div class="review-card verified">
+                <div class="review-badge"><i class="fas fa-check-circle"></i> Verified Purchase</div>
+                <div class="review-header">
+                    <div class="reviewer-avatar">RK</div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-name">Rahul Kumar</div>
+                        <div>
+                            <span class="review-rating">★★★★★</span>
+                            <span class="rating-count">(5.0)</span>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="review-title">Received my iPhone 16 Pro! 🎉</h4>
+                <p class="review-text">Won the iPhone 16 Pro 256GB! Arrived in perfect condition with all accessories. Verification was smooth and the phone works great. Thanks Flipkart!</p>
+                
+                <div class="review-footer">
+                    <div class="review-date"><i class="far fa-calendar-alt"></i> Today</div>
+                    <div class="review-actions">
+                        <div class="review-action like">
+                            <i class="far fa-thumbs-up"></i> 24
+                        </div>
+                        <div class="review-action reply">
+                            <i class="far fa-comment"></i> Reply
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reply-section">
+                    <div class="reply-from">
+                        <strong>Flipkart Team</strong>
+                        <p class="reply-text">Thank you for your positive feedback, Rahul! Enjoy your new iPhone! 😊</p>
+                        <div class="reply-actions">
+                            <span class="reply-action"><i class="far fa-thumbs-up"></i> Helpful (12)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar">AS</div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-name">Anjali Singh</div>
+                        <div>
+                            <span class="review-rating">★★★★★</span>
+                            <span class="rating-count">(5.0)</span>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="review-title">Legit giveaway! 😍</h4>
+                <p class="review-text">Received my iPhone in 3 days! Genuine product with 1-year warranty. The scratch card process was smooth. Highly recommend!</p>
+                
+                <div class="review-footer">
+                    <div class="review-date"><i class="far fa-calendar-alt"></i> 2 days ago</div>
+                    <div class="review-actions">
+                        <div class="review-action like">
+                            <i class="far fa-thumbs-up"></i> 18
+                        </div>
+                        <div class="review-action reply">
+                            <i class="far fa-comment"></i> Reply
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Review 3 -->
+            <div class="review-card verified">
+                <div class="review-badge"><i class="fas fa-check-circle"></i> Verified Purchase</div>
+                <div class="review-header">
+                    <div class="reviewer-avatar">VP</div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-name">Vikram Patel</div>
+                        <div>
+                            <span class="review-rating">★★★★☆</span>
+                            <span class="rating-count">(4.5)</span>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="review-title">Great phone, minor delivery delay</h4>
+                <p class="review-text">The iPhone 16 Pro is amazing! Camera and battery life are outstanding. Small delivery delay but customer service was helpful.</p>
+                
+                <div class="review-footer">
+                    <div class="review-date"><i class="far fa-calendar-alt"></i> 5 days ago</div>
+                    <div class="review-actions">
+                        <div class="review-action like">
+                            <i class="far fa-thumbs-up"></i> 9
+                        </div>
+                        <div class="review-action reply">
+                            <i class="far fa-comment"></i> Reply
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reply-section">
+                    <div class="reply-from">
+                        <strong>Flipkart Team</strong>
+                        <p class="reply-text">Thank you for your feedback, Vikram. We're glad you're enjoying your new iPhone!</p>
+                        <div class="reply-actions">
+                            <span class="reply-action"><i class="far fa-thumbs-up"></i> Helpful (5)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
